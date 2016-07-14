@@ -1,0 +1,26 @@
+{
+  "name": "node_hangman",
+  "version": "1.0.0",
+  "description": "hangman game built entirely in node.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tg7/node-Hangman.git"
+  },
+  "keywords": [
+    "hangman",
+    "node.js"
+  ],
+  "author": "Todd Germaine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tg7/node-Hangman/issues"
+  },
+  "homepage": "https://github.com/tg7/node-Hangman#readme",
+  "dependencies": {
+    "inquirer": "^1.1.2"
+  }
+}
