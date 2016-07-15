@@ -1,9 +1,19 @@
 //Create Constructor file containing letters
 
+var game = require ('./game.js');
 //Should control whether or not a letter appears as a "_" or as itself on-screen.
 
-exports.letters = {
-  letters: 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-};
+var Letters = function(userGuess) {
+  this.guess = userGuess;
+  this.show = false;
+  this.letterCheck = function() {
+    if (letterCheck === this.show) {
+      return "__";
+    } else {
+      return userGuess;
+    }
 
-module.exports.letters;
+  }
+}
+
+module.exports = Letters;

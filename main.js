@@ -4,6 +4,4 @@
 var fs = require('fs');
 var inquirer = require ('inquirer');
 
-var words = require ('./game.js');
-
 console.log(words);
