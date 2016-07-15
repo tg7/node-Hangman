@@ -1,10 +1,15 @@
-// List of words
-var words = ['AUGUSTA', 'TRENTON', 'ALBANY', 'SACRAMENTO', 'DENVER', 'DOVER', 'ATLANTA'];
+// List Of Words
 
-//randomly selects a word for the player
+function Game() {
+
+// List Of Words
+var words = ['MONTGOMERY','JUNEAU','PHOENIX','LITTLE ROCK','SACRAMENTO','DENVER','HARTFORD','DOVER','TALLAHASSEE','ATLANTA','HONOLULU','BOISE','SPRINGFIELD','INDIANAPOLIS','DES MOINES','TOPEKA','FRANKFORT','BATON ROUGE','AUGUSTA','ANNAPOLIS','BOSTON','LANSING','SAINT PAUL','JACKSON','JEFFERSON CITY','HELENA','LINCOLN','CARSON CITY','CONCORD','TRENTON','SANTA FE','ALBANY','RALEIGH','BISMARCK','COLUMBUS','OKLAHOMA CITY','SALEM','HARRISBURG','PROVIDENCE','COLUMBIA','PIERRE','NASHVILLE','AUSTIN','SALT LAKE CITY','MONTPELIER','RICHMOND','OLYMPIA','CHARLESTON','MADISON','CHEYENNE'];
+
 var answer = words[Math.floor(Math.random() * words.length)];
 
 console.log('The Word Is: ' + answer);
 
+};
+
 //Exports words module
-module.exports = words;
+module.exports = Game;
