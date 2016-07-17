@@ -30,7 +30,6 @@ var guessLetter = [
   name: 'input',
   message: 'Please guess a letter...'
 }];
-
 // Functions
 
 function init() {
@@ -47,6 +46,7 @@ function play() {
   // Push boxes Ex: _ _ _ to screen somehow
   // boxes.push(answer);
   wordStart();
+  game();
 }
 
 function wordStart() {
@@ -56,9 +56,8 @@ function wordStart() {
 });
 
 };
+// word();
 
 init();
 
-// Game();
-
-// console.log(game);
+// console.log(letter);

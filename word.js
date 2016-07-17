@@ -1,20 +1,13 @@
 //Create Constructor file containing words
 
-var game = require('./letter.js');
-var game = require ('./game');
-
 //Should contain all of the methods which will check the letters guessed versus the random word selected.
 
 var CheckWord = function(check) {
-  this.word = check.word;
+  this.answer = check;
   this.boxes = [];
-  this.matchedLetters = function() {
-    for (var i = 0; i < this.word.length; i++) {
-      var matched = new Letter(this.word[i]);
-    }
-  }
   this.makeBoxes = function() {
-    for (var i = 0; i < answer.length; i++) {
+    for (var i = 0; i < this.answer.length; i++) {
+    var matched = new Letter(this.answer[i]);
     boxes.push(' ___ ');
     } 
   }
@@ -33,4 +26,5 @@ var CheckWord = function(check) {
 
 module.exports = CheckWord;
 
+// Create Constructor File that uses a for loop to determine if letters match the guessed word
 
