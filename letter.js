@@ -7,13 +7,11 @@ function Letters(word) {
     if (this.show === false) {
       return " __ "
 
-    } else if (this.letter === " ") {
-        return " ";
-
       } else {
         return this.letter;
     }
   }
 };
 
+//Exports letters module
 module.exports = Letters;

@@ -11,7 +11,8 @@ var word = require ('./word');
 var guesses = 8;
 var wins = 0;
 var losses = 0;
-var word;
+var word = null;
+var lettersPicked = [];
 
 // Assigned Variables To Ask Userguess through Inquirer
 
